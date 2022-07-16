@@ -170,22 +170,22 @@ public abstract class Roboter {
 	public static void setMotorAcc(char motor, int acceleration) {
 		if (acceleration > 0) {
 			switch (motor) {
-			case 'a':
-			case 'A':
-				Motor.A.setAcceleration(acceleration);
-				break;
-			case 'b':
-			case 'B':
-				Motor.A.setAcceleration(acceleration);
-				break;
-			case 'c':
-			case 'C':
-				Motor.A.setAcceleration(acceleration);
-				break;
-			case 'd':
-			case 'D':
-				Motor.A.setAcceleration(acceleration);
-				break;
+				case 'a':
+				case 'A':
+					Motor.A.setAcceleration(acceleration);
+					break;
+				case 'b':
+				case 'B':
+					Motor.A.setAcceleration(acceleration);
+					break;
+				case 'c':
+				case 'C':
+					Motor.A.setAcceleration(acceleration);
+					break;
+				case 'd':
+				case 'D':
+					Motor.A.setAcceleration(acceleration);
+					break;
 			}
 		}
 	}
@@ -385,18 +385,18 @@ public abstract class Roboter {
 
 	public static void addSensor(SensorType sensorType, int port) {
 		switch (sensorType) {
-		case Color:
-			colorSensor[port - 1] = new ColorSensor(port);
-			break;
-		case HiTColor:
-			hiTechnicColorSensor[port - 1] = new HiTColorSensor(port);
-			break;
-		case Gyro:
-			gyroSensor[port - 1] = new GyroSensor(port);
-			break;
-		case UltraSchall:
-			ultraSchallSensor[port - 1] = new UltraSchallSensor(port);
-			break;
+			case Color:
+				colorSensor[port - 1] = new ColorSensor(port);
+				break;
+			case HiTColor:
+				hiTechnicColorSensor[port - 1] = new HiTColorSensor(port);
+				break;
+			case Gyro:
+				gyroSensor[port - 1] = new GyroSensor(port);
+				break;
+			case UltraSchall:
+				ultraSchallSensor[port - 1] = new UltraSchallSensor(port);
+				break;
 		}
 	}
 
